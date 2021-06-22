@@ -7,7 +7,7 @@ function validation() {
   if (email.match(pattern)) {
     form.classList.add('valid');
     form.classList.remove('valid');
-    text.innerHTML = 'Okayy, email teman - teman valid!';
+    text.innerHTML = 'Okayy, semoga email teman - teman sudah benar yaa';
     text.style.color = '#88A550';
   } else {
     form.classList.remove('valid');
