@@ -2,7 +2,7 @@ function validation() {
   let form = document.getElementById('form');
   let email = document.getElementById('email').value;
   let text = document.getElementById('text');
-  let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  let pattern = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
 
   if (email.match(pattern)) {
     form.classList.add('valid');
