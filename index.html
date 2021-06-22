@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet" />
     <title>Tangankedua Indonesia</title>
@@ -47,9 +47,10 @@
             semoga tertarik.
           </p>
         </div>
-        <form action="" method="post" class="form">
-          <input type="text" name="email" id="email" class="formInput" autocomplete="off" placeholder="Masukkan email teman - teman disini untuk pra-registrasi.." />
+        <form id="form" action="" method="post">
+          <input type="text" name="email" id="email" class="formInput" autocomplete="off" placeholder="Masukkan email teman - teman disini untuk pra-registrasi.." onkeydown="validation()" />
           <button type="submit" name="login" class="formSubmit">Kirim</button>
+          <span id="text"></span>
         </form>
       </div>
       <div class="content-2">
@@ -68,5 +69,6 @@
         <img class="footer-img" src="img/icon.svg" alt="" />
       </div>
     </footer>
+    <script src="scripts.js"></script>
   </body>
 </html>

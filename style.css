@@ -102,6 +102,18 @@ nav ul li a:hover {
 }
 
 /* Form */
+#form {
+  position: relative;
+}
+
+#text {
+  display: block;
+  color: #000000;
+  font-weight: 400;
+  font-style: italic;
+  padding: 5px;
+}
+
 .formInput {
   width: 80%;
   height: 25px;
@@ -418,7 +430,7 @@ nav ul li a:hover {
   }
 }
 
-/* Super Very Very Extra small devices (phones, 600px and down) */
+/* Super Very Very Extra small devices (phones, 350px and up) */
 @media only screen and (min-width: 350px) {
   .formSubmit {
     background-color: #a5c05b; /* Green */
@@ -527,7 +539,7 @@ nav ul li a:hover {
   }
 }
 
-/* Super Very Extra small devices (phones, 600px and down) */
+/* Super Very Extra small devices (phones, 400px and up) */
 @media only screen and (mmin-width: 400px) {
   .formSubmit {
     background-color: #a5c05b; /* Green */
@@ -636,7 +648,7 @@ nav ul li a:hover {
   }
 }
 
-/* Very Extra small devices (phones, 600px and up) */
+/* Very Extra small devices (phones, 450px and up) */
 @media only screen and (min-width: 450px) {
   .formSubmit {
     background-color: #a5c05b; /* Green */
