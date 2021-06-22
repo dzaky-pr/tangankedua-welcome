@@ -204,7 +204,7 @@ nav ul li a:hover {
     background-color: #a5c05b; /* Green */
     border: none;
     color: black;
-    padding: 5px 12px;
+    padding: 10px 17px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -215,8 +215,8 @@ nav ul li a:hover {
   }
 
   .formInput {
-    width: 50%;
-    height: 16px;
+    width: 72%;
+    height: 20px;
     border-radius: 5px;
     font-size: 9px;
     padding: 2px 4px;
@@ -313,7 +313,7 @@ nav ul li a:hover {
     background-color: #a5c05b; /* Green */
     border: none;
     color: black;
-    padding: 5px 12px;
+    padding: 10px 17px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -324,8 +324,8 @@ nav ul li a:hover {
   }
 
   .formInput {
-    width: 50%;
-    height: 16px;
+    width: 70%;
+    height: 20px;
     border-radius: 5px;
     font-size: 9px;
     padding: 2px 4px;
@@ -433,7 +433,7 @@ nav ul li a:hover {
   }
 
   .formInput {
-    width: 50%;
+    width: 60%;
     height: 16px;
     border-radius: 5px;
     font-size: 9px;
@@ -542,7 +542,7 @@ nav ul li a:hover {
   }
 
   .formInput {
-    width: 50%;
+    width: 60%;
     height: 16px;
     border-radius: 5px;
     font-size: 9px;
