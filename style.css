@@ -230,7 +230,7 @@ nav ul li a:hover {
     width: 95%;
     height: 20px;
     border-radius: 5px;
-    font-size: 7px;
+    font-size: 9px;
     padding: 2px 4px;
     display: flex;
     margin-top: 30px;
@@ -322,6 +322,10 @@ nav ul li a:hover {
 
 /* Super Duper Very Very Extra small devices (phones, 300px and up) */
 @media only screen and (min-width: 300px) {
+  #text {
+    font-size: 11px;
+  }
+
   .formSubmit {
     background-color: #a5c05b; /* Green */
     border: none;
@@ -330,7 +334,7 @@ nav ul li a:hover {
     text-align: center;
     text-decoration: none;
     display: flex;
-    font-size: 9px;
+    font-size: 11px;
     margin: 15px auto 0px auto;
     cursor: pointer;
     border-radius: 5px;
@@ -340,7 +344,7 @@ nav ul li a:hover {
     width: 95%;
     height: 20px;
     border-radius: 5px;
-    font-size: 7px;
+    font-size: 13px;
     padding: 2px 4px;
     display: flex;
     margin-top: 30px;
@@ -440,7 +444,7 @@ nav ul li a:hover {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 9px;
+    font-size: 11px;
     margin: 30px 0px 0px 20px;
     cursor: pointer;
     border-radius: 5px;
@@ -450,7 +454,7 @@ nav ul li a:hover {
     width: 67%;
     height: 20px;
     border-radius: 5px;
-    font-size: 8px;
+    font-size: 13px;
     padding: 2px 4px;
     display: inline-block;
   }
@@ -549,7 +553,7 @@ nav ul li a:hover {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 9px;
+    font-size: 13px;
     margin: 30px 0px 0px 20px;
     cursor: pointer;
     border-radius: 5px;
@@ -559,7 +563,7 @@ nav ul li a:hover {
     width: 67%;
     height: 20px;
     border-radius: 5px;
-    font-size: 8px;
+    font-size: 13px;
     padding: 2px 4px;
     display: inline-block;
   }
@@ -668,7 +672,7 @@ nav ul li a:hover {
     width: 70%;
     height: 20px;
     border-radius: 5px;
-    font-size: 9px;
+    font-size: 13px;
     padding: 2px 4px;
     display: inline-block;
   }
@@ -759,6 +763,10 @@ nav ul li a:hover {
 
 /* Extra small devices (phones, 500px and up) */
 @media only screen and (min-width: 500px) {
+  #text {
+    font-size: 13px;
+  }
+
   .formSubmit {
     background-color: #a5c05b; /* Green */
     border: none;
@@ -777,7 +785,7 @@ nav ul li a:hover {
     width: 60%;
     height: 16px;
     border-radius: 5px;
-    font-size: 9px;
+    font-size: 13px;
     padding: 2px 4px;
     display: inline-block;
   }
@@ -886,7 +894,7 @@ nav ul li a:hover {
     width: 60%;
     height: 16px;
     border-radius: 5px;
-    font-size: 9px;
+    font-size: 13px;
     padding: 2px 4px;
     display: inline-block;
   }
@@ -995,7 +1003,7 @@ nav ul li a:hover {
     width: 65%;
     height: 16px;
     border-radius: 10px;
-    font-size: 8px;
+    font-size: 13px;
     padding: 5px 10px;
     display: inline-block;
   }
@@ -1102,6 +1110,10 @@ nav ul li a:hover {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  #text {
+    font-size: 15px;
+  }
+
   .formSubmit {
     background-color: #a5c05b; /* Green */
     border: none;
@@ -1120,7 +1132,7 @@ nav ul li a:hover {
     width: 70%;
     height: 25px;
     border-radius: 10px;
-    font-size: 11px;
+    font-size: 13px;
     padding: 5px 10px;
     display: inline-block;
   }
