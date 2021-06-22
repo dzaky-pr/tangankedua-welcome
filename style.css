@@ -128,7 +128,7 @@ nav ul li a:hover {
 }
 
 .formSubmit {
-  background-color: #a5c05b; /* Green */
+  background-color: #a5c05b;
   border: none;
   color: black;
   padding: 10px 20px;
@@ -1436,7 +1436,7 @@ nav ul li a:hover {
   }
 
   .formSubmit {
-    background-color: #a5c05b; /* Green */
+    background-color: #a5c05b;
     border: none;
     color: black;
     padding: 10px 20px;
