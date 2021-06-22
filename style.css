@@ -44,6 +44,7 @@ nav ul li a:hover {
 .container {
   margin: 50px 50px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   height: auto;
   width: auto;
@@ -143,37 +144,351 @@ nav ul li a:hover {
   height: 400px;
 }
 
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 21px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 5px;
+  background-color: #88a550;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+/* Hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:last-child {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: #fa6775;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:last-child {
+  background-color: #fa6775;
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
 /* Responsive Breakpoint */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .image {
+    height: 140px;
+    width: 140px;
+  }
+
+  nav {
+    font-size: 18px;
+  }
+
+  nav ul {
+    display: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: blue;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  /* Hamburger Menu */
+  .menu-toggle {
+    display: flex;
+  }
+
+  .footer-img {
+    height: 100px;
+  }
+
+  .content-1,
+  .content-2 {
+    display: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  /* .formInput {
-    width: 60%;
-    height: 25px;
-    border-radius: 10px;
-    font-size: 8px;
-    padding: 5px 10px;
+  .formSubmit {
+    background-color: #a5c05b; /* Green */
+    border: none;
+    color: black;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
-  } */
+    font-size: 9px;
+    margin: 30px 0px 0px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .formInput {
+    width: 50%;
+    height: 16px;
+    border-radius: 5px;
+    font-size: 9px;
+    padding: 2px 4px;
+    display: inline-block;
+  }
+
+  .assets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-img {
+    z-index: -1;
+    margin-bottom: 0px;
+    position: absolute;
+    height: 200px;
+  }
+
+  .container {
+    flex-direction: column;
+    margin: 30px 30px;
+  }
+
+  .content-1 {
+    background-color: #ffffff;
+    box-shadow: 3px 5px 3px #00000025;
+    padding: 20px;
+    width: auto;
+    border-radius: 25px;
+  }
+
+  .judul {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+  }
+
+  .paragraf {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .paragraf p {
+    padding-top: 20px;
+  }
+
+  .content-2 {
+    margin-top: 30px;
+    width: auto;
+    height: 200px;
+  }
+
+  .baris-1 {
+    padding-top: 0px;
+  }
+
+  .baris-2 {
+    padding-bottom: 0px;
+  }
+
+  .image {
+    height: 130px;
+    width: 130px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-logo {
+    width: 170px;
+  }
+
+  nav {
+    font-size: 13px;
+    padding: 20px 45px;
+    font-weight: 600;
+  }
+
+  nav ul {
+    display: none;
+  }
+  /* Hamburger Menu */
+  .menu-toggle {
+    display: none;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  /* .formInput {
-    width: 67%;
-    height: 25px;
+  .formSubmit {
+    background-color: #a5c05b; /* Green */
+    border: none;
+    color: black;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 30px 0px 0px 20px;
+    cursor: pointer;
     border-radius: 10px;
-    font-size: 10px;
+  }
+
+  .formInput {
+    width: 65%;
+    height: 16px;
+    border-radius: 10px;
+    font-size: 8px;
     padding: 5px 10px;
     display: inline-block;
-  } */
+  }
+
+  .assets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-img {
+    z-index: -1;
+    margin-bottom: 0px;
+    position: absolute;
+    height: 250px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .content-1 {
+    background-color: #ffffff;
+    box-shadow: 3px 5px 3px #00000025;
+    padding: 20px;
+    width: 45%;
+    border-radius: 25px;
+  }
+
+  .judul {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+  }
+
+  .paragraf {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .paragraf p {
+    padding-top: 20px;
+  }
+
+  .content-2 {
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 3px 5px 3px #00000025;
+    /* margin-left: 30px; */
+    height: 300px;
+    width: 300px;
+  }
+
+  .image {
+    height: 140px;
+    width: 140px;
+  }
+
+  .baris-1 {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+  }
+
+  .baris-2 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-logo {
+    width: 170px;
+  }
+
+  nav {
+    font-size: 13px;
+    padding: 20px 45px;
+    font-weight: 600;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Hamburger Menu */
+  .menu-toggle {
+    display: none;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .formSubmit {
+    background-color: #a5c05b; /* Green */
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 30px 0px 0px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
   .formInput {
     width: 70%;
     height: 25px;
@@ -273,6 +588,14 @@ nav ul li a:hover {
     font-size: 15px;
     padding: 20px 45px;
     font-weight: 600;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
