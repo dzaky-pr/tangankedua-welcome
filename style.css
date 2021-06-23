@@ -230,6 +230,10 @@ footer {
 /* Responsive Breakpoint */
 /* Extra small breakpoint*/
 @media only screen and (max-width: 300px) {
+  footer {
+    margin-top: 50px;
+  }
+
   .formSubmit {
     padding: 7px 90px;
     display: flex;
@@ -312,6 +316,10 @@ footer {
 
 /* Super Duper Very Very Extra small devices (phones, 300px and up) */
 @media only screen and (min-width: 300px) {
+  footer {
+    margin-top: 60px;
+  }
+
   #text {
     font-size: 11px;
   }
@@ -324,6 +332,10 @@ footer {
 
   .formInput {
     font-size: 13px;
+  }
+
+  .footer-img {
+    height: 120px;
   }
 
   .container {
@@ -343,6 +355,11 @@ footer {
     height: auto;
   }
 
+  .image {
+    height: 135px;
+    width: 135px;
+  }
+
   .logo {
     display: flex;
   }
@@ -358,6 +375,10 @@ footer {
 
 /* Super Very Very Extra small devices (phones, 350px and up) */
 @media only screen and (min-width: 350px) {
+  footer {
+    margin-top: 60px;
+  }
+
   .formSubmit {
     padding: 10px 13px;
   }
@@ -403,6 +424,10 @@ footer {
 
 /* Super Very Extra small devices (phones, 400px and up) */
 @media only screen and (min-width: 400px) {
+  footer {
+    margin-top: 70px;
+  }
+
   .formSubmit {
     padding: 10px 17px;
     font-size: 13px;
@@ -440,6 +465,10 @@ footer {
 
 /* Very Extra small devices (phones, 450px and up) */
 @media only screen and (min-width: 450px) {
+  footer {
+    margin-top: 85px;
+  }
+
   .formSubmit {
     font-size: 9px;
   }
@@ -479,8 +508,8 @@ footer {
   }
 
   .image {
-    height: 170px;
-    width: 170px;
+    height: 160px;
+    width: 160px;
   }
 
   nav ul {
@@ -494,6 +523,10 @@ footer {
 
 /* Extra small devices (phones, 500px and up) */
 @media only screen and (min-width: 500px) {
+  footer {
+    margin-top: 85px;
+  }
+
   #text {
     font-size: 13px;
   }
@@ -540,6 +573,10 @@ footer {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  footer {
+    margin-top: 100px;
+  }
+
   .formSubmit {
     padding: 8px 15px;
   }
@@ -589,6 +626,10 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  footer {
+    margin-top: 125px;
+  }
+
   .formSubmit {
     padding: 8px 15px;
     font-size: 11px;
@@ -650,6 +691,10 @@ footer {
     font-size: 15px;
   }
 
+  footer {
+    margin-top: 151px;
+  }
+
   .formSubmit {
     padding: 10px 20px;
     font-size: 15px;
@@ -701,6 +746,11 @@ footer {
     padding: 20px 45px;
     font-weight: 600;
   }
+
+  footer {
+    margin-top: 200px;
+  }
+
   /* Content */
   .container {
     margin: 9% 50px 0px 50px;
