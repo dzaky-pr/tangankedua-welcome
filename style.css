@@ -9,7 +9,6 @@ nav {
   font-size: 20px;
   display: flex;
   background-color: #fff;
-  /* width: 100%; */
   justify-content: space-between;
   padding: 20px 45px;
   font-weight: 600;
@@ -38,10 +37,14 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-.logo img {
+.logo {
   height: auto;
   display: flex;
   align-items: center;
+}
+
+.logo-logo {
+  width: 170px;
 }
 
 /* Content */
@@ -59,7 +62,6 @@ nav ul li a:hover {
   background-color: #ffffff;
   box-shadow: 3px 5px 3px #00000025;
   padding: 25px;
-  /* margin-right: 30px; */
   width: 50%;
   border-radius: 25px;
 }
@@ -83,14 +85,17 @@ nav ul li a:hover {
   border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
   box-shadow: 3px 5px 3px #00000025;
-  /* margin-left: 30px; */
   height: 450px;
   width: 450px;
+}
+
+.image {
+  height: 210px;
+  width: 210px;
 }
 
 .baris-1 {
@@ -116,6 +121,7 @@ nav ul li a:hover {
   font-weight: 400;
   font-style: italic;
   padding: 5px;
+  font-size: 15px;
 }
 
 .formInput {
@@ -147,6 +153,14 @@ nav ul li a:hover {
 }
 
 /* Footer */
+footer {
+  margin-top: 200px;
+  background-color: white;
+  width: 100%;
+  height: 150px;
+  box-shadow: 3px -5px 3px #00000025;
+}
+
 .assets {
   display: flex;
   justify-content: center;
@@ -217,16 +231,10 @@ nav ul li a:hover {
 /* Extra small breakpoint*/
 @media only screen and (max-width: 300px) {
   .formSubmit {
-    background-color: #a5c05b; /* Green */
-    border: none;
-    color: black;
     padding: 7px 90px;
-    text-align: center;
-    text-decoration: none;
     display: flex;
     font-size: 9px;
     margin: 10px auto 0px auto;
-    cursor: pointer;
     border-radius: 5px;
   }
 
@@ -240,17 +248,9 @@ nav ul li a:hover {
     margin-top: 30px;
   }
 
-  .assets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .footer-img {
-    z-index: -1;
-    margin-bottom: 0px;
-    position: absolute;
     height: 100px;
+    margin-bottom: 0;
   }
 
   .container {
@@ -259,26 +259,23 @@ nav ul li a:hover {
   }
 
   .content-1 {
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
     padding: 20px;
     width: auto;
     border-radius: 25px;
   }
 
+  .content-2 {
+    margin-top: 30px;
+    width: auto;
+    height: auto;
+  }
+
   .judul {
-    font-family: 'Poppins', sans-serif;
     font-size: 21px;
   }
 
   .paragraf {
-    font-family: 'Quicksand', sans-serif;
     font-size: 13px;
-    font-weight: 400;
-  }
-
-  .paragraf p {
-    padding-top: 20px;
   }
 
   .content-2 {
@@ -300,19 +297,8 @@ nav ul li a:hover {
     width: 110px;
   }
 
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-logo {
-    width: 170px;
-  }
-
   nav {
     font-size: 13px;
-    padding: 20px 45px;
-    font-weight: 600;
   }
 
   nav ul {
@@ -331,40 +317,13 @@ nav ul li a:hover {
   }
 
   .formSubmit {
-    background-color: #a5c05b; /* Green */
-    border: none;
-    color: black;
     padding: 7px auto;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
     font-size: 11px;
     margin: 15px auto 0px auto;
-    cursor: pointer;
-    border-radius: 5px;
   }
 
   .formInput {
-    width: 95%;
-    height: 20px;
-    border-radius: 5px;
     font-size: 13px;
-    padding: 2px 4px;
-    display: flex;
-    margin-top: 30px;
-  }
-
-  .assets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer-img {
-    z-index: -1;
-    margin-bottom: 0px;
-    position: absolute;
-    height: 100px;
   }
 
   .container {
@@ -373,26 +332,9 @@ nav ul li a:hover {
   }
 
   .content-1 {
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
     padding: 20px;
     width: auto;
     border-radius: 25px;
-  }
-
-  .judul {
-    font-family: 'Poppins', sans-serif;
-    font-size: 21px;
-  }
-
-  .paragraf {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .paragraf p {
-    padding-top: 20px;
   }
 
   .content-2 {
@@ -401,32 +343,8 @@ nav ul li a:hover {
     height: auto;
   }
 
-  .baris-1 {
-    padding-top: 20px;
-  }
-
-  .baris-2 {
-    padding-bottom: 20px;
-  }
-
-  .image {
-    height: 110px;
-    width: 110px;
-  }
-
   .logo {
     display: flex;
-    align-items: center;
-  }
-
-  .logo-logo {
-    width: 170px;
-  }
-
-  nav {
-    font-size: 13px;
-    padding: 20px 45px;
-    font-weight: 600;
   }
 
   nav ul {
@@ -441,38 +359,14 @@ nav ul li a:hover {
 /* Super Very Very Extra small devices (phones, 350px and up) */
 @media only screen and (min-width: 350px) {
   .formSubmit {
-    background-color: #a5c05b; /* Green */
-    border: none;
-    color: black;
     padding: 10px 13px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 11px;
-    margin: 30px 0px 0px 20px;
-    cursor: pointer;
-    border-radius: 5px;
   }
 
   .formInput {
     width: 67%;
-    height: 20px;
-    border-radius: 5px;
-    font-size: 13px;
-    padding: 2px 4px;
-    display: inline-block;
-  }
-
-  .assets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .footer-img {
-    z-index: -1;
-    margin-bottom: 0px;
-    position: absolute;
     height: 120px;
   }
 
@@ -482,26 +376,9 @@ nav ul li a:hover {
   }
 
   .content-1 {
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
     padding: 20px;
     width: auto;
     border-radius: 25px;
-  }
-
-  .judul {
-    font-family: 'Poppins', sans-serif;
-    font-size: 21px;
-  }
-
-  .paragraf {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .paragraf p {
-    padding-top: 20px;
   }
 
   .content-2 {
@@ -510,32 +387,9 @@ nav ul li a:hover {
     height: auto;
   }
 
-  .baris-1 {
-    padding-top: 20px;
-  }
-
-  .baris-2 {
-    padding-bottom: 20px;
-  }
-
   .image {
     height: 140px;
     width: 140px;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-logo {
-    width: 170px;
-  }
-
-  nav {
-    font-size: 13px;
-    padding: 20px 45px;
-    font-weight: 600;
   }
 
   nav ul {
@@ -550,39 +404,12 @@ nav ul li a:hover {
 /* Super Very Extra small devices (phones, 400px and up) */
 @media only screen and (min-width: 400px) {
   .formSubmit {
-    background-color: #a5c05b; /* Green */
-    border: none;
-    color: black;
     padding: 10px 17px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 13px;
-    margin: 30px 0px 0px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  .formInput {
-    width: 67%;
-    height: 20px;
-    border-radius: 5px;
-    font-size: 13px;
-    padding: 2px 4px;
-    display: inline-block;
-  }
-
-  .assets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .footer-img {
-    z-index: -1;
-    margin-bottom: 0px;
-    position: absolute;
-    height: 140px;
+    height: 140px; 
   }
 
   .container {
@@ -591,60 +418,15 @@ nav ul li a:hover {
   }
 
   .content-1 {
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
     padding: 20px;
     width: auto;
     border-radius: 25px;
-  }
-
-  .judul {
-    font-family: 'Poppins', sans-serif;
-    font-size: 21px;
-  }
-
-  .paragraf {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .paragraf p {
-    padding-top: 20px;
   }
 
   .content-2 {
     margin-top: 30px;
     width: auto;
     height: auto;
-  }
-
-  .baris-1 {
-    padding-top: 20px;
-  }
-
-  .baris-2 {
-    padding-bottom: 20px;
-  }
-
-  .image {
-    height: 140px;
-    width: 140px;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-logo {
-    width: 170px;
-  }
-
-  nav {
-    font-size: 13px;
-    padding: 20px 45px;
-    font-weight: 600;
   }
 
   nav ul {
@@ -659,39 +441,16 @@ nav ul li a:hover {
 /* Very Extra small devices (phones, 450px and up) */
 @media only screen and (min-width: 450px) {
   .formSubmit {
-    background-color: #a5c05b; /* Green */
-    border: none;
-    color: black;
-    padding: 10px 17px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 9px;
-    margin: 30px 0px 0px 20px;
-    cursor: pointer;
-    border-radius: 5px;
   }
 
   .formInput {
     width: 70%;
-    height: 20px;
-    border-radius: 5px;
-    font-size: 13px;
-    padding: 2px 4px;
-    display: inline-block;
-  }
-
-  .assets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .footer-img {
-    z-index: -1;
-    margin-bottom: 0px;
-    position: absolute;
     height: 170px;
+    
   }
 
   .container {
@@ -700,26 +459,9 @@ nav ul li a:hover {
   }
 
   .content-1 {
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
     padding: 20px;
     width: auto;
     border-radius: 25px;
-  }
-
-  .judul {
-    font-family: 'Poppins', sans-serif;
-    font-size: 21px;
-  }
-
-  .paragraf {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .paragraf p {
-    padding-top: 20px;
   }
 
   .content-2 {
@@ -739,21 +481,6 @@ nav ul li a:hover {
   .image {
     height: 170px;
     width: 170px;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-logo {
-    width: 170px;
-  }
-
-  nav {
-    font-size: 13px;
-    padding: 20px 45px;
-    font-weight: 600;
   }
 
   nav ul {
@@ -772,39 +499,12 @@ nav ul li a:hover {
   }
 
   .formSubmit {
-    background-color: #a5c05b; /* Green */
-    border: none;
-    color: black;
-    padding: 5px 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 9px;
-    margin: 30px 0px 0px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+    padding: 7px auto;
   }
 
   .formInput {
     width: 60%;
     height: 16px;
-    border-radius: 5px;
-    font-size: 13px;
-    padding: 2px 4px;
-    display: inline-block;
-  }
-
-  .assets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer-img {
-    z-index: -1;
-    margin-bottom: 0px;
-    position: absolute;
-    height: 170px;
   }
 
   .container {
@@ -813,26 +513,9 @@ nav ul li a:hover {
   }
 
   .content-1 {
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
     padding: 20px;
     width: auto;
     border-radius: 25px;
-  }
-
-  .judul {
-    font-family: 'Poppins', sans-serif;
-    font-size: 21px;
-  }
-
-  .paragraf {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .paragraf p {
-    padding-top: 20px;
   }
 
   .content-2 {
@@ -841,32 +524,9 @@ nav ul li a:hover {
     height: auto;
   }
 
-  .baris-1 {
-    padding-top: 30px;
-  }
-
-  .baris-2 {
-    padding-bottom: 30px;
-  }
-
   .image {
     height: 220px;
     width: 220px;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-logo {
-    width: 170px;
-  }
-
-  nav {
-    font-size: 13px;
-    padding: 20px 45px;
-    font-weight: 600;
   }
 
   nav ul {
@@ -881,67 +541,22 @@ nav ul li a:hover {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .formSubmit {
-    background-color: #a5c05b; /* Green */
-    border: none;
-    color: black;
-    padding: 5px 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 9px;
-    margin: 30px 0px 0px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-
-  .formInput {
-    width: 60%;
-    height: 16px;
-    border-radius: 5px;
-    font-size: 13px;
-    padding: 2px 4px;
-    display: inline-block;
-  }
-
-  .assets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 8px 15px;
   }
 
   .footer-img {
-    z-index: -1;
-    margin-bottom: 0px;
-    position: absolute;
     height: 200px;
   }
 
   .container {
-    flex-direction: column;
     margin: 14% 30px 0px 30px;
+    flex-direction: column;
   }
 
   .content-1 {
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
     padding: 20px;
     width: auto;
     border-radius: 25px;
-  }
-
-  .judul {
-    font-family: 'Poppins', sans-serif;
-    font-size: 21px;
-  }
-
-  .paragraf {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .paragraf p {
-    padding-top: 20px;
   }
 
   .content-2 {
@@ -963,21 +578,6 @@ nav ul li a:hover {
     width: 270px;
   }
 
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-logo {
-    width: 170px;
-  }
-
-  nav {
-    font-size: 13px;
-    padding: 20px 45px;
-    font-weight: 600;
-  }
-
   nav ul {
     display: none;
   }
@@ -990,39 +590,17 @@ nav ul li a:hover {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .formSubmit {
-    background-color: #a5c05b; /* Green */
-    border: none;
-    color: black;
     padding: 8px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 11px;
-    margin: 30px 0px 0px 20px;
-    cursor: pointer;
-    border-radius: 10px;
   }
 
   .formInput {
     width: 65%;
-    height: 16px;
-    border-radius: 10px;
-    font-size: 13px;
-    padding: 5px 10px;
-    display: inline-block;
-  }
-
-  .assets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .footer-img {
-    z-index: -1;
-    margin-bottom: 0px;
-    position: absolute;
     height: 250px;
+    
   }
 
   .container {
@@ -1031,38 +609,14 @@ nav ul li a:hover {
   }
 
   .content-1 {
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
-    padding: 20px;
     width: 45%;
-    border-radius: 25px;
   }
 
   .judul {
-    font-family: 'Poppins', sans-serif;
     font-size: 25px;
   }
 
-  .paragraf {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .paragraf p {
-    padding-top: 20px;
-  }
-
   .content-2 {
-    border-radius: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
-    /* margin-left: 30px; */
     height: 300px;
     width: 300px;
   }
@@ -1073,38 +627,15 @@ nav ul li a:hover {
   }
 
   .baris-1 {
-    display: flex;
-    align-items: center;
     padding-top: 12px;
   }
 
   .baris-2 {
-    display: flex;
-    align-items: center;
     padding-bottom: 12px;
   }
 
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-logo {
-    width: 170px;
-  }
-
-  nav {
-    font-size: 13px;
-    padding: 20px 45px;
-    font-weight: 600;
-  }
-
   nav ul {
-    display: flex;
-    list-style: none;
     width: 40%;
-    justify-content: space-between;
-    align-items: center;
   }
 
   /* Hamburger Menu */
@@ -1120,84 +651,31 @@ nav ul li a:hover {
   }
 
   .formSubmit {
-    background-color: #a5c05b; /* Green */
-    border: none;
-    color: black;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 15px;
-    margin: 30px 0px 0px 20px;
-    cursor: pointer;
-    border-radius: 10px;
   }
 
   .formInput {
     width: 70%;
     height: 25px;
     border-radius: 10px;
-    font-size: 13px;
-    padding: 5px 10px;
-    display: inline-block;
-  }
-
-  .assets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .footer-img {
-    z-index: -1;
-    margin-bottom: 0px;
-    position: absolute;
     height: 300px;
   }
 
   .container {
     margin: 10% 40px 0px 40px;
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-    width: auto;
-    z-index: 1;
   }
 
   .content-1 {
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
-    padding: 20px;
-    /* margin-right: 30px; */
     width: 50%;
     border-radius: 25px;
-  }
-
-  .judul {
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-  }
-
-  .paragraf {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-  }
-
-  .paragraf p {
-    padding-top: 20px;
   }
 
   .content-2 {
     border-radius: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
-    /* margin-left: 30px; */
     height: 350px;
     width: 350px;
   }
@@ -1207,39 +685,12 @@ nav ul li a:hover {
     width: 160px;
   }
 
-  .baris-1 {
-    display: flex;
-    align-items: center;
-    padding-top: 12px;
-  }
-
-  .baris-2 {
-    display: flex;
-    align-items: center;
-    padding-bottom: 12px;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-logo {
-    width: 170px;
-  }
-
   nav {
     font-size: 15px;
-    padding: 20px 45px;
-    font-weight: 600;
   }
 
   nav ul {
-    display: flex;
-    list-style: none;
     width: 30%;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -1253,60 +704,30 @@ nav ul li a:hover {
   /* Content */
   .container {
     margin: 9% 50px 0px 50px;
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-    width: auto;
-    z-index: 1;
   }
 
   .content-1 {
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
     padding: 25px;
-    /* margin-right: 30px; */
-    width: 50%;
-    border-radius: 25px;
   }
 
   .judul {
-    font-family: 'Poppins', sans-serif;
     font-size: 30px;
   }
 
   .paragraf {
-    font-family: 'Quicksand', sans-serif;
     font-size: 18px;
-    font-weight: 400;
-  }
-
-  .paragraf p {
-    padding-top: 20px;
   }
 
   .content-2 {
-    border-radius: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
-    /* margin-left: 30px; */
     height: 450px;
     width: 450px;
   }
 
   .baris-1 {
-    display: flex;
-    align-items: center;
     padding-top: 15px;
   }
 
   .baris-2 {
-    display: flex;
-    align-items: center;
     padding-bottom: 15px;
   }
 
@@ -1318,108 +739,16 @@ nav ul li a:hover {
   /* Form */
   .formInput {
     width: 75%;
-    height: 25px;
-    border-radius: 10px;
-    font-size: 13px;
     padding: 5px 10px;
-    display: inline-block;
-  }
-
-  .formSubmit {
-    background-color: #a5c05b; /* Green */
-    border: none;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: 30px 0px 0px 20px;
-    cursor: pointer;
-    border-radius: 10px;
-  }
-
-  .formSubmit:hover {
-    background-color: #88a550; /* Green */
-    color: white;
-  }
-
-  /* Footer */
-  .assets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .footer-img {
-    z-index: -1;
-    margin-bottom: 0px;
-    position: absolute;
     height: 400px;
   }
 }
 
 @media only screen and (min-width: 1332px) {
   /* Content */
-  .container {
-    margin: 9% 50px 0px 50px;
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-    width: auto;
-    z-index: 1;
-  }
-
-  .content-1 {
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
-    padding: 25px;
-    /* margin-right: 30px; */
-    width: 50%;
-    border-radius: 25px;
-  }
-
-  .judul {
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-  }
-
-  .paragraf {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-  }
-
-  .paragraf p {
-    padding-top: 20px;
-  }
-
-  .content-2 {
-    border-radius: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    box-shadow: 3px 5px 3px #00000025;
-    /* margin-left: 30px; */
-    height: 450px;
-    width: 450px;
-  }
-
-  .baris-1 {
-    display: flex;
-    align-items: center;
-    padding-top: 15px;
-  }
-
-  .baris-2 {
-    display: flex;
-    align-items: center;
-    padding-bottom: 15px;
-  }
-
   .image {
     height: 210px;
     width: 210px;
@@ -1428,43 +757,6 @@ nav ul li a:hover {
   /* Form */
   .formInput {
     width: 80%;
-    height: 25px;
-    border-radius: 10px;
     font-size: 15px;
-    padding: 5px 10px;
-    display: inline-block;
-  }
-
-  .formSubmit {
-    background-color: #a5c05b;
-    border: none;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 15px;
-    margin: 30px 0px 0px 20px;
-    cursor: pointer;
-    border-radius: 10px;
-  }
-
-  .formSubmit:hover {
-    background-color: #88a550; /* Green */
-    color: white;
-  }
-
-  /* Footer */
-  .assets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .footer-img {
-    z-index: -1;
-    margin-bottom: 0px;
-    position: absolute;
-    height: 400px;
   }
 }
