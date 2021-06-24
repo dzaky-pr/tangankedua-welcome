@@ -155,7 +155,7 @@ nav ul li a:hover {
 /* Footer */
 footer {
   margin-top: 200px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 150px;
   box-shadow: 3px -5px 3px #00000025;
@@ -194,6 +194,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-size: 14px;
 }
 
 .footer-text a {
@@ -286,7 +287,7 @@ footer {
 /* Extra small breakpoint*/
 @media only screen and (max-width: 300px) {
   footer {
-    margin-top: 50px;
+    margin-top: 43px;
     height: 310px;
   }
 
@@ -309,7 +310,7 @@ footer {
   }
 
   .footer-img {
-    height: 100px;
+    height: 85px;
     margin-bottom: 0;
   }
 
@@ -338,12 +339,6 @@ footer {
     font-size: 13px;
   }
 
-  .content-2 {
-    margin-top: 30px;
-    width: auto;
-    height: auto;
-  }
-
   .baris-1 {
     padding-top: 20px;
   }
@@ -353,8 +348,8 @@ footer {
   }
 
   .image {
-    height: 110px;
-    width: 110px;
+    height: 90px;
+    width: 90px;
   }
 
   nav {
@@ -393,6 +388,7 @@ footer {
 
   .footer-text {
     gap: 5px;
+    font-size: 12px;
   }
 
   .footer-logo-pack {
@@ -406,14 +402,14 @@ footer {
   }
 
   .copyright {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
 /* Super Duper Very Very Extra small devices (phones, 300px and up) */
 @media only screen and (min-width: 300px) {
   footer {
-    margin-top: 60px;
+    margin-top: 50px;
     height: 310px;
   }
 
@@ -432,7 +428,7 @@ footer {
   }
 
   .footer-img {
-    height: 120px;
+    height: 100px;
   }
 
   .container {
@@ -679,7 +675,7 @@ footer {
 /* Very Extra small devices (phones, 450px and up) */
 @media only screen and (min-width: 450px) {
   footer {
-    margin-top: 85px;
+    margin-top: 75px;
   }
 
   .formSubmit {
@@ -691,7 +687,7 @@ footer {
   }
 
   .footer-img {
-    height: 170px;
+    height: 150px;
   }
 
   .container {
@@ -772,7 +768,7 @@ footer {
 /* Extra small devices (phones, 500px and up) */
 @media only screen and (min-width: 500px) {
   footer {
-    margin-top: 85px;
+    margin-top: 75px;
   }
 
   #text {
