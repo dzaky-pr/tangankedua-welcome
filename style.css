@@ -148,7 +148,7 @@ nav ul li a:hover {
 }
 
 .formSubmit:hover {
-  background-color: #88a550; /* Green */
+  background-color: #88a550;
   color: white;
 }
 
@@ -213,12 +213,12 @@ footer {
 .assets {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .footer-img {
   z-index: -1;
-  margin-bottom: 0px;
+  display: flex;
   position: absolute;
   height: 400px;
 }
@@ -1163,6 +1163,10 @@ footer {
     height: 210px;
     width: 210px;
   }
+
+  /* .footer-img {
+    bottom: -10px;
+  } */
 
   /* Form */
   .formInput {
